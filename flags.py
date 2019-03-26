@@ -6,6 +6,7 @@ LOSS_FCTS = ["softmax", "nce", "sampledsoftmax"]
 
 flags = tf.flags
 logging = tf.logging
+flags.DEFINE_string('f', '', 'kernel')
 
 flags.DEFINE_bool("continue", False, "Continue training where it stopped")
 flags.DEFINE_string("model_dir", "model", "model_dir (containing ckpt files and word_to_id)")
